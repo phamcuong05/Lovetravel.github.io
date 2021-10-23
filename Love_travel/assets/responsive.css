@@ -1,0 +1,117 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .hide_pc {
+        display: none;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .hide__mobile-tablet {
+        display: none;
+    }
+
+    #header {
+        height: var(--header-mobile-tablet--height);
+    }
+
+    /* navbar menu */
+
+    .navbar-menu__wrap {
+        display: flex;
+        height: var(--header-mobile-tablet--height);
+        flex-direction: column;
+    }
+
+    .navbar-menu__img-wrap {
+        text-decoration: none;
+        line-height: calc(var(--header-mobile-tablet--height) / 2);
+        margin: auto;
+        padding: 0;
+    }
+
+    .navbar-menu__icon {
+        margin: auto;
+        line-height: calc(var(--header-mobile-tablet--height) / 2);        
+    }
+
+    .navbar-menu__icon i {
+        font-size: 28px;
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    /* menu navbar animation */
+    .navbar-menu__mobile-tablet {
+        position: fixed;
+        width: 284px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: var(--extra--background-color);
+        overflow: scroll;
+        display: none;
+        transform: translateX(100%);
+        transition: transform ease 1s;
+    }
+
+    .navbar-menu__input {
+        display: none;
+    }
+
+    .navbar-menu__input:checked ~ .navbar-menu__mobile-tablet {
+        display: block;
+        transform: translateX(0);
+    }
+
+    /* .open {
+        display: block;
+    } */
+
+    .navbar-menu__mobile-tablet--close {
+        border-radius: 50%;
+        background-color: var(--extra--background-color);
+        border: 2px solid#fff;
+        float: right;
+        margin: 20px 20px 0 0;
+        cursor: pointer;
+    }
+
+    .navbar-menu__mobile-tablet--close i {
+        display: block;
+        color: #fff;
+        padding: 4px 3px 4px 4px;
+    }
+
+    .navbar-menu__list-md {
+        padding: 40px;
+        list-style: none;
+    }
+
+    .navbar-menu__list-item-md {
+        padding-bottom: 20px;
+    }
+
+    .navbar-menu__list-item-link-md {
+        display: block;
+        padding: 10px 0;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .sub-menu-md {
+        list-style: none;
+    }
+
+    .sub-menu__item-md {
+        padding: 10px 0;
+    }
+
+    .sub-menu__item-link-md {
+        color: #fff;
+        font-size: 14px;
+    }
+
+}

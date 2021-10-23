@@ -1,0 +1,63 @@
+:root {
+    --text-color: #a4a4a4;
+    --text-color-bold: #5e6d81;
+    --purple-color: #ba71da;
+    --blue-color: #14b9d5;
+    --red-color: #f76570;
+    --green-color: #1bbc9b;
+    --orange-color: #f3a46b;
+    --yellow-color: #ffd205;
+    --extra--background-color: #434a54;
+
+    --header-function--height: 48px;
+    --header-menu--height: 80px;
+    --header-mobile-tablet--height: 114px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 27px;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin: 0;
+}
+
+@keyframes FadeIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes FadeOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
